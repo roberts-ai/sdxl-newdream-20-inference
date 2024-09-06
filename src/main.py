@@ -27,7 +27,7 @@ def main():
                 image = infer(request, pipeline)
 
                 data = BytesIO()
-                image.save(data, format=image.format)
+                image.save(data, format="png")
 
                 packet = data.getvalue()
 
